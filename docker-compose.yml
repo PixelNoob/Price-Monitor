@@ -1,0 +1,7 @@
+version: "3"
+
+services:
+  monitor:
+    container_name: price_monitor
+    image: monitor:slim
+    restart: unless-stopped
