@@ -1,7 +1,7 @@
-version: "3"
-
 services:
   monitor:
     container_name: price_monitor
+    build:
+       context: .
     image: monitor:slim
     restart: unless-stopped
